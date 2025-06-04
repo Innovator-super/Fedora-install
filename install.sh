@@ -18,6 +18,12 @@ cat rm.txt >> ~/.bash_profile
 cat "alias.txt" >> ~/.bashrc
 source ~/.bashrc
 
+read -p "Do you want to set a keyboard shortcut for switching desktops (y or n)? " flag
+
+if [ "$flag" = "y" ]; then
+	for i in {1..9}; do gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-$i "['<Alt>$i']"; done
+fi
+
 read -p "Do you want to restart (y or n)? " flag
 
 if [ "$flag" = "y" ]; then
