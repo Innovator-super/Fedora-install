@@ -1,0 +1,5 @@
+alias copy="xclip -selection clipboard"
+alias Documents="zip -r ./Документы.zip ./Документы"
+alias Wallpaper="zip -r ./Wallpaper.zip ./Изображения/Wallpaper"
+alias l="ls -lah"
+alias k="kitty +kitten icat"
