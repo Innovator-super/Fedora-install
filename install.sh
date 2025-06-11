@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo dnf update -y
 
-sudo dnf install vim gparted clapper kitty -y
+sudo dnf install vim gparted clapper kitty gcc gcc-c++ fastfetch -y
 
 sudo dnf install dnf-plugins-core -y
 
@@ -13,6 +13,8 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 sudo dnf install google-chrome-stable_current_x86_64.rpm -y
 
 flatpak install flathub com.obsproject.Studio md.obsidian.Obsidian com.github.IsmaelMartinez.teams_for_linux org.gimp.GIMP org.gnome.gitlab.YaLTeR.VideoTrimmer com.github.unrud.VideoDownloader org.pgadmin.pgadmin4 us.zoom.Zoom com.mattjakeman.ExtensionManager com.visualstudio.code org.telegram.desktop -y
+
+bash scripts/vscode.sh
 
 cat rm.txt >> ~/.bash_profile
 cat "alias.txt" >> ~/.bashrc
