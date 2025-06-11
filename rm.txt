@@ -4,6 +4,6 @@ rm ~/.config/yandex-browser/SingletonSocket
 rm ~/.config/BraveSoftware/Brave-Browser/SingletonCookie
 rm ~/.config/BraveSoftware/Brave-Browser/SingletonLock
 rm ~/.config/BraveSoftware/Brave-Browser/SingletonSocket
-rm ~/.config/BraveSoftware/google-chrome/SingletonCookie
-rm ~/.config/BraveSoftware/google-chrome/SingletonLock
-rm ~/.config/BraveSoftware/google-chrome/SingletonSocket
+rm ~/.config/google-chrome/SingletonCookie
+rm ~/.config/google-chrome/SingletonLock
+rm ~/.config/google-chrome/SingletonSocket
