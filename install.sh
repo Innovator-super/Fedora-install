@@ -3,6 +3,12 @@ sudo dnf update -y
 
 sudo dnf install vim gparted clapper kitty gcc gcc-c++ fastfetch -y
 
+cp files/kitty.conf ~/.config/kitty/
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+cp files/vimrc ~/.vimrc
+
 sudo dnf install dnf-plugins-core -y
 
 sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo -y
@@ -16,8 +22,8 @@ flatpak install flathub com.obsproject.Studio md.obsidian.Obsidian com.github.Is
 
 bash scripts/vscode.sh
 
-cat rm.txt >> ~/.bash_profile
-cat "alias.txt" >> ~/.bashrc
+cat files/rm.txt >> ~/.bash_profile
+cat files/"alias.txt" >> ~/.bashrc
 source ~/.bashrc
 
 read -p "Do you want to set a keyboard shortcut for switching desktops (y or n)? " flag
