@@ -3,7 +3,8 @@ sudo dnf update -y
 
 sudo dnf install vim gparted clapper kitty gcc gcc-c++ fastfetch -y
 
-cp files/kitty.conf ~/.config/kitty/
+mkdir ~/.config/kitty
+cp files/kitty.conf ~/.config/kitty/kitty.conf
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -28,7 +29,8 @@ bash scripts/oh-my-posh.sh
 
 cat files/rm.txt >> ~/.bash_profile
 cat files/"alias.txt" >> ~/.bashrc
-cat files/config.jsonc ~/.config/fastfetch/config.jsonc
+mkdir ~/.config/fastfetch
+cp files/config.jsonc ~/.config/fastfetch/config.jsonc
 cat files/bashrc >> ~/.bashrc
 source ~/.bashrc
 
